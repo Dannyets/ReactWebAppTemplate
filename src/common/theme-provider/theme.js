@@ -20,7 +20,7 @@ export const defaultTheme = {
     titleTextColor: palette.first,
     fontFamilty: `"Lato", sans-serif`,
     fontSize: '1.3rem'
-}
+};
 
 export const padding = theme('mode', {
     'default': defaultTheme.padding,

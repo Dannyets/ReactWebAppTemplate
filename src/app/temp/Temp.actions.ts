@@ -1,5 +1,5 @@
 import { GET_TEMPLATES, ADD_ITEM, REMOVE_ITEM } from './Temp.actionTypes';
-import { ITemplate } from './Template';
+import { ITemplate } from './Template.model';
 
 export const getTemplatesSuccess = (templates: ITemplate[]) => ({
     type: GET_TEMPLATES,

@@ -1,4 +1,4 @@
-import { ITemplate } from "./Template";
+import { ITemplate } from "./Template.model";
 
 export interface TempState {
     templates: ITemplate[],

@@ -8,7 +8,7 @@ type ListProps = {
 };
 
 export const List: React.FC<ListProps> = ({ items, children }) => (
-    <ListContainer>
+    <ListContainer direction="column">
         {items.map((i, index) => (
             <ListItem key={index} 
                       render={children} 

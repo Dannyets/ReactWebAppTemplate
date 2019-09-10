@@ -21,7 +21,11 @@ export const List = styled.ul`
     padding: 0 10px;
 `;
 
-export const ListItem = styled.li`
+type ListItemProps = {
+    isActive: boolean
+};
+
+export const ListItem = styled.li<ListItemProps>`
     font-weight: 400;
     padding: 7px 10px;
     font-size: 14px;

@@ -1,5 +1,4 @@
 import React from 'react';
-import { withRouter } from 'react-router-dom';
 import { Provider } from 'react-redux';
 
 import { routes } from './routes';
@@ -9,17 +8,15 @@ import { Header } from './Root.styles';
 
 import {
   ThemeProvider,
-  Navigation,
+  NavigationWithRouter,
   Router,
   configureStore,
   IRoute
 } from '../common';
 
-const NavigationWithRouter = withRouter(Navigation);
-
 const store = configureStore({
-  player: {
-    playlist: []
+  temp: {
+    templates: []
   }
 });
 
@@ -29,7 +26,7 @@ interface IConfiguration {
   baseUrl: string;
 };
 
-const configuration: IConfiguration = {
+export const configuration: IConfiguration = {
   baseUrl: 'http://localhost:3001'
 };
 

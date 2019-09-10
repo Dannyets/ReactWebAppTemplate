@@ -7,7 +7,7 @@ export type ListItem = {
 }
 
 export const ListItem: React.FC<ListItem> = ({ item, render }) => (
-    <ListItemContainer>
+    <ListItemContainer direction="row">
         {render({ item })}
     </ListItemContainer>
 );
