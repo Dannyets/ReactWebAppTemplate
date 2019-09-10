@@ -4,6 +4,7 @@ import { Provider } from 'react-redux';
 import { routes } from './routes';
 
 import './Root.css';
+import '../app/App.css';
 import { Header } from './Root.styles';
 
 import {
@@ -11,7 +12,8 @@ import {
   NavigationWithRouter,
   Router,
   configureStore,
-  IRoute
+  IRoute,
+  IConfiguration
 } from '../common';
 
 const store = configureStore({
@@ -21,10 +23,6 @@ const store = configureStore({
 });
 
 const navigationLinks = convertRoutesToNavigationLinks(routes);
-
-interface IConfiguration {
-  baseUrl: string;
-};
 
 export const configuration: IConfiguration = {
   baseUrl: 'http://localhost:3001'

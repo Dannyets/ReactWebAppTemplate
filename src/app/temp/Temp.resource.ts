@@ -10,7 +10,7 @@ export const getUrl = (baseUrl: string) => {
     const url = baseUrl || defaultUrl;
     const templatesApiUrl = `${url}/api/templates/`;
     return templatesApiUrl;
-}
+};
 
 export const useTemplatesFetcher = () => {
     const dispatch = useDispatch();

@@ -1,7 +1,7 @@
-import { ITemplate } from "./Template.model";
+import { ITemplateListItem } from "./temp-list-item/TemplateListItem.model";
 
 export interface TempState {
-    templates: ITemplate[],
+    templates: ITemplateListItem[],
 };
 
 export const tempDefaultState: TempState = {

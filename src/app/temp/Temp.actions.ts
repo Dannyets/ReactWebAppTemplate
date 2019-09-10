@@ -1,14 +1,14 @@
 import { GET_TEMPLATES, ADD_ITEM, REMOVE_ITEM } from './Temp.actionTypes';
-import { ITemplate } from './Template.model';
+import { ITemplateListItem } from './temp-list-item/TemplateListItem.model';
 
-export const getTemplatesSuccess = (templates: ITemplate[]) => ({
+export const getTemplatesSuccess = (templates: ITemplateListItem[]) => ({
     type: GET_TEMPLATES,
     payload: { 
         templates 
     }
 });
 
-export const addItem = (template: ITemplate) => ({
+export const addItem = (template: ITemplateListItem) => ({
     type: ADD_ITEM,
     payload: {
         template

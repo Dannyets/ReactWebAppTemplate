@@ -1,3 +1,3 @@
 export * from './Temp';
 export * from './Temp.reducer';
-export * from './Template.model';
+export * from './temp-list-item';
